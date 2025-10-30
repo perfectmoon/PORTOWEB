@@ -143,15 +143,22 @@ export default function Blog() {
                   ))}
                 </div>
 
-                <Button 
-                  variant="ghost" 
-                  size="sm" 
-                  className="w-full font-mono gap-2 group"
-                  data-testid={`button-read-${post.id}`}
-                >
-                  Read Writeup 
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                <a
+                  href={`/writeups/${post.id}.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full"
+                  >
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="w-full font-mono gap-2 group"
+                    data-testid={`button-read-${post.id}`}
+                  >
+                    Read Writeup
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </a>
               </div>
             </Card>
           ))}

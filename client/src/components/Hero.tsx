@@ -52,7 +52,7 @@ export default function Hero() {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="mb-6 flex items-center justify-center gap-2 text-primary">
           <Terminal className="w-6 h-6" data-testid="icon-terminal" />
-          <span className="font-mono text-sm" data-testid="text-prompt">guest@portfolio:~$</span>
+          <span className="font-mono text-sm" data-testid="text-prompt">VALAK@portfolio:~$</span>
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold font-mono mb-4" data-testid="text-name">
